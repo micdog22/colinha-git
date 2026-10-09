@@ -1,4 +1,4 @@
-# Colinha de Git — guia prático de Git em português (HTML + JavaScript)
+# Colinha de Git: guia prático de Git em português (HTML + JavaScript)
 
 Uma colinha de Git organizada por **situação**, não por comando: “desfazer o último commit sem perder as alterações”, “apaguei uma branch sem querer”, “o push foi rejeitado”. Você busca o que quer fazer, copia o comando e segue em frente.
 
@@ -11,7 +11,7 @@ Feita para quem está começando e também para quem usa Git todo dia, mas não 
 - Busca instantânea que ignora acentos e maiúsculas, procura em títulos, comandos e explicações e entende sinônimos comuns (“deletar” encontra “apagar”, “senha” encontra “token”).
 - Filtro por categoria, botão de copiar em cada comando e link direto para cada dica.
 - Comandos modernos (`git switch`, `git restore`), com o equivalente antigo (`git checkout`) indicado quando existe.
-- Avisos claros nos comandos destrutivos (`reset --hard`, `clean -fd`, `branch -D`, push forçado — prefira `--force-with-lease`).
+- Avisos claros nos comandos destrutivos (`reset --hard`, `clean -fd`, `branch -D` e push forçado, de preferência com `--force-with-lease`).
 - Tema claro e escuro (automático ou escolhido no botão) e versão para impressão em duas colunas.
 - Sem dependências e sem rastreadores: tudo roda no navegador.
 
@@ -44,4 +44,4 @@ npm test
 Issues e pull requests são bem-vindos. Achou um comando impreciso ou sentiu falta de alguma situação? Abra uma issue contando o caso.
 
 ## Licença
-MIT — veja [LICENSE](LICENSE).
+MIT. Veja [LICENSE](LICENSE).
