@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colinha de Git — guia prático de Git em português</title>
+  <meta name="description" content="Guia prático de Git em português, organizado por situação: busque o que quer fazer, copie o comando e siga em frente. Desfazer commits, branches, conflitos, stash e mais.">
+  <meta name="theme-color" content="#c2410c">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <script>
+    try {
+      var tema = localStorage.getItem('colinha-git:tema');
+      if (tema === 'escuro') document.documentElement.dataset.theme = 'dark';
+      if (tema === 'claro') document.documentElement.dataset.theme = 'light';
+    } catch (e) {}
+  </script>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#resultados">Pular para as dicas</a>
+  <header class="site-header">
+    <div class="header-row">
+      <div>
+        <h1>Colinha de Git</h1>
+        <p class="lead">Guia prático de Git em português, organizado por situação. Busque o que você quer fazer, copie o comando e siga em frente.</p>
+      </div>
+      <div class="header-actions">
+        <button type="button" class="btn secondary" id="tema">Tema: automático</button>
+        <button type="button" class="btn secondary" id="imprimir">Imprimir</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card search-card" aria-label="Busca e filtros">
+      <label for="busca">Buscar na colinha</label>
+      <input type="search" id="busca" placeholder="Ex.: desfazer commit, conflito, reset --hard" autocomplete="off" spellcheck="false" aria-describedby="busca-dica">
+      <p class="hint" id="busca-dica">A busca ignora acentos e maiúsculas e procura nos títulos, comandos e explicações. Atalho: tecla <kbd>/</kbd>. Trechos como <code>&lt;arquivo&gt;</code> devem ser trocados pelos seus valores.</p>
+      <div class="chips" id="categorias" role="group" aria-label="Filtrar por categoria"></div>
+    </section>
+
+    <p id="status" class="status" aria-live="polite"></p>
+    <div id="resultados" tabindex="-1"></div>
+    <div id="anuncio" class="sr-only" aria-live="polite"></div>
+    <noscript><p class="card">Esta página precisa de JavaScript para mostrar as dicas.</p></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <p>Tudo roda no seu navegador. Código aberto no <a href="https://github.com/micdog22/colinha-git">GitHub</a> · Licença MIT</p>
+  </footer>
+</body>
+</html>

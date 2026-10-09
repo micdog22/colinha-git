@@ -1,0 +1,11 @@
+{
+  "name": "colinha-git",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Colinha de Git: guia prático de Git em português, organizado por situação, com busca instantânea.",
+  "type": "module",
+  "scripts": { "test": "node --test" },
+  "license": "MIT",
+  "repository": { "type": "git", "url": "git+https://github.com/micdog22/colinha-git.git" },
+  "homepage": "https://micdog22.github.io/colinha-git/"
+}
